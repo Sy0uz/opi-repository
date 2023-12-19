@@ -1,0 +1,263 @@
+body {
+   background-color: rgb(245, 245, 245);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper {
+  color: rgb(243, 243, 243);
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+   max-width: 1300px;
+   margin: 0px auto;
+}
+
+.header {
+   height: 70px;
+   background-color: rgb(80, 184, 72);
+   display: flex;
+   align-items: center;
+   padding: 30px 0px;
+}
+
+.header__container {
+   display: flex;
+   align-items: center;
+}
+
+.nav {
+   width: 1300px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav__logo {
+   display: flex;
+   column-gap: 10px;
+   align-items: center;
+   font-size: 1.25em;
+   background-color: white;
+   padding: 8px;
+   border-radius: 8px;
+}
+
+.nav__title {
+   font-size: 1.9em;
+   font-weight: 600;
+   user-select: none;
+   cursor: pointer;
+   letter-spacing: 0.4px;
+   color:rgb(80, 184, 72);
+}
+
+.nav__links {
+   display: flex;
+   column-gap: 50px;
+   margin-top: 7px;
+}
+
+.nav__link {
+   font-size: 1.2em;
+   font-weight: 500;
+   cursor: pointer;
+   line-height: 1.5;
+   transition: all 0.2s ease-in-out;
+}
+
+.nav__link:hover{
+   opacity: 0.88;
+}
+
+.top__section {
+   display: flex;
+   justify-content: space-evenly;
+   background-color: white;
+   box-shadow: 0px 0px 8px 1px gray;
+}
+
+.route {
+   padding: 50px 0px;
+}
+
+.section__image {
+   margin-top: 80px;
+   width: 600px;
+}
+
+.route__title {
+   text-align: center;
+   font-weight: 600;
+   font-size: 3em;
+   margin-bottom: 50px;
+   color: black;
+}
+
+.form__inputs {
+   background-color: white;
+   overflow: hidden;
+   border-radius: 11px;
+   width: max-content;
+   margin: 0 auto;
+}
+
+.form__inputs > div {
+   display: flex;
+   justify-content: center;   
+   background-color: rgb(241, 241, 241);
+   padding: 8px;
+}
+
+.form__input {
+   padding: 17px 10px;
+   font-weight: 500;
+   font-size: 1.17em;
+   border-radius: 8px;
+}
+
+.form__input[name="placeFromInput"] {
+   width: 250px;
+   margin-right: 8px;
+}
+
+.form__input[name="placeToInput"] {
+   width: 250px;
+   margin-left: 8px;
+}
+
+.form__input[name="dateFromInput"] {
+   cursor: pointer;
+   width: 100%;
+   margin-right: 8px;
+}
+
+.form__input[name="dateToInput"] {
+   cursor: pointer;
+   width: 100%;
+   margin-left: 8px;
+}
+
+.form__input[name="fioInput"] {
+   border: none;
+   width: 100%;
+   background-color: white;
+}
+
+.form__input[name="weightInput"] {
+   border: none;
+   width: 100%;
+   background-color: white;
+}
+
+.form__button {
+   font-size: 1.17em;
+   padding: 18px 25px;
+   border-radius: 8px;
+   background-color: rgb(80, 184, 72);
+   color: white;
+   cursor: pointer;
+   width: 100%;
+}
+
+.promo {
+   position: relative;
+   height:500px;
+   background-image: url("../assets/bg-airport.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center 0px ;
+
+   margin-bottom: 50px;
+
+}
+
+.promo:after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5);
+}
+
+.promo__container {
+   z-index: 2;
+   position: relative;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+.banner__title {
+   color: white;
+   font-weight: 600;
+   font-size: 3em;
+}
+
+
+.route-list {
+   padding: 60px 0px;
+   color: rgb(19, 19, 19);
+}
+
+
+.table {
+   width: 100%;
+   font-size: 1.1em;
+}
+
+.table,
+th,
+td {
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+
+th,
+td {
+  padding: 17px 8px;
+  /* min-width: 109px; */
+}
+ 
+ tbody td {
+   text-align: center;
+ }
+ 
+ th {
+   background-color: rgb(80, 184, 72);
+   color:white;
+ }
+
+ .button {
+   padding: 6px 15px;
+   color: rgb(249, 249, 249);
+   font-size: 0.95em;
+   font-weight: 600;
+ }
+
+ .button_delete {
+   color: rgb(249, 249, 249);
+   background-color: rgb(207, 55, 55);
+   border-radius: 0 6px 6px 0;
+ }
+
+ .button_edit {
+   color: rgb(249, 249, 249);
+   background-color: rgb(80, 184, 72);
+   border-radius: 6px 0 0 6px;
+ }
+
+
+ .footer {
+   margin-top: auto;
+   background-color: white;
+   padding: 30px 0;
+   display: flex;
+   justify-content: space-evenly;
+   color:rgb(141, 141, 141)
+ }

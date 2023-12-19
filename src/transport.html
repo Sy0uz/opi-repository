@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./assets/62.png" />
+   <link rel="stylesheet" href="./styles/reset.css">
+   <link rel="stylesheet" href="./styles/common.css">
+   <link rel="stylesheet" href="./styles/transport.css">
+   <title>Transport Company</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container _container">
+            <nav class="nav">
+               <div class="nav__logo">
+                  <h2 class="nav__title">ByBus</h2>
+                  <img src="./assets/62.png" alt="Plane" title="Plane" width="27px">
+               </div>
+               
+               <ul class="nav__links">
+                  <li class="nav__link">Информация</li>
+                  <li class="nav__link">Рейсы</li>
+                  <li class="nav__link">Контакты</li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <main class="main">
+         <section class="top__section">
+            <section>
+               <img src="/src/assets/car.svg" alt="car" class="section__image">
+            </section>
+            <section class="main__route route">
+               <div class="route__container _container">
+                  <h3 class="route__title">Транспортная компания</h3>
+                  <form action="" class="form" id="form">
+                     <div class="form__inputs">
+                        <div>
+                           <input required class="form__input" type="text" minlength="2" maxlength="100" name="placeFromInput" id="placeFromInput" placeholder="Откуда">
+                           <input required class="form__input" type="text" minlength="2" maxlength="100" name="placeToInput" id="placeToInput" placeholder="Куда">                        
+                        </div>
+                        <div>
+                           <input required class="form__input" type="date" min="2023-12-10" name="dateFromInput" id="dateFromInput" placeholder="Туда">
+                           <input required class="form__input" type="date" min="2023-12-10" name="dateToInput" id="dateToInput" placeholder="Обратно">                        
+                        </div>
+                        <div>
+                           <input required class="form__input" type="text" minlength="5" maxlength="100" name="fioInput" id="fioInput" placeholder="ФИО">                        
+                        </div>
+                        <div>
+                           <input required class="form__input" type="number" min="0" max="300" type="text" name="weightInput" id="weightInput" placeholder="Вес груза">
+                        </div>
+                        <div class="button__div">
+                           <button class="form__button" type="submit" onclick="addData()">Добавить</button>
+                        </div>
+                        
+                     </div>
+                  </form>
+               </div>
+            </section>
+         </section>
+
+         <section class="main__route-list route-list">
+            <div class="route-list__container _container">
+               <table class="table" id="table">
+                  <tr>
+                     <th>№</th>
+                     <th>Откуда</th>
+                     <th>Куда</th>
+                     <th>Дата отправки</th>
+                     <th>Дата прибытия</th>
+                     <th>ФИО заказчика</th>
+                     <th>Вес груза</th>
+                     <th>Редактирование</th>
+                  </tr>
+               </table>
+            </div>
+               
+         </section>
+
+         <div class="_container">
+           
+         </div>
+      </main>
+      <footer class="footer">
+         <div>
+            © ByBus 2023
+         </div>
+         <div>
+            Информация на сайте не является публичной офертой
+         </div>
+      </footer>
+   </div>
+   <script src="./js/transport.js"></script>
+</body>
+</html>
